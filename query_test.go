@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-rod/rod"
-	"github.com/go-rod/rod/lib/cdp"
-	"github.com/go-rod/rod/lib/defaults"
-	"github.com/go-rod/rod/lib/proto"
-	"github.com/go-rod/rod/lib/utils"
+	"github.com/GoCodeAlone/rod"
+	"github.com/GoCodeAlone/rod/lib/cdp"
+	"github.com/GoCodeAlone/rod/lib/defaults"
+	"github.com/GoCodeAlone/rod/lib/proto"
+	"github.com/GoCodeAlone/rod/lib/utils"
 	"github.com/ysmood/gson"
 )
 

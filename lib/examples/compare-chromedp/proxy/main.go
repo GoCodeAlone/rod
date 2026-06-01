@@ -2,14 +2,15 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"log"
 	"net/http"
 	"net/http/httptest"
 	"net/http/httputil"
 
-	"github.com/go-rod/rod"
-	"github.com/go-rod/rod/lib/launcher"
+	"github.com/GoCodeAlone/rod"
+	"github.com/GoCodeAlone/rod/lib/launcher"
 )
 
 func main() {
@@ -66,7 +67,7 @@ type transport struct {
 
 func (t *transport) RoundTrip(r *http.Request) (*http.Response, error) {
 	if h := r.Header.Get("X-Failed"); h != "" {
-		return nil, fmt.Errorf(h)
+		return nil, errors.New(h)
 	}
 	return t.RoundTripper.RoundTrip(r)
 }

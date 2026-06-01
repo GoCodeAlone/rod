@@ -6,10 +6,10 @@ import (
 	"errors"
 	"regexp"
 
-	"github.com/go-rod/rod/lib/cdp"
-	"github.com/go-rod/rod/lib/js"
-	"github.com/go-rod/rod/lib/proto"
-	"github.com/go-rod/rod/lib/utils"
+	"github.com/GoCodeAlone/rod/lib/cdp"
+	"github.com/GoCodeAlone/rod/lib/js"
+	"github.com/GoCodeAlone/rod/lib/proto"
+	"github.com/GoCodeAlone/rod/lib/utils"
 )
 
 // SelectorType enum.
